@@ -1,0 +1,520 @@
+/* Font type */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Rozha+One&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation Bar(logo and nav) */
+header{
+    background-color: #957F0D;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.logo{
+    width: 64px;
+    height: 67px;
+    margin: 9px 0 0 20px;
+}
+
+nav{
+    color: white;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    padding-right: 20px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+/* nav hover */
+nav li:hover{
+    color: #484747;
+}
+
+nav li{
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* RWD phone hamburger */
+@media screen and (max-width: 650px) {
+    header {
+        width: 100vw;
+    }
+
+    .hamburger{
+        display: block;
+        margin-top: 30px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        background-color: #484747;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav li{
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    nav li:hover{
+        color: #957F0D;
+    }
+   
+}
+
+
+/* Hero Image and Title */
+.heroImage{
+    background-image:url(/Images/Hero\ Image.svg) ;
+    padding-top: 220px;
+    height: 415px;
+    background-size: cover;
+    background-position: right;   
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    font-size: 48px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+/* Title of Most popular and Ctagories */
+h2{
+    color: white;
+    font-size: 36px;
+    font-family: 'Comfortaa', cursive;
+    background-color: #957F0D ;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding: 27px 70px;
+}
+
+/* RWD phone Title of Most popular and Ctagories */
+@media screen and (max-width: 650px) {
+    h2 {
+        padding: 27px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Most popular */
+.countryPanel {
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+}
+
+.countries {
+    margin: 10px 0;
+    margin-right: 16px;
+	height: 100%;
+	position: relative;
+}
+
+
+.countryName1{
+    color: white;
+    font-size: 64px;
+    font-family: 'Rozha One', serif;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+.countryName2{
+    color: white;
+    font-size: 36px;
+    font-family: 'Rozha One', serif;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+.phoneCanada{
+    display: none;
+} 
+
+/* most popular Hover */
+.information{
+    display: none;
+    position: absolute;
+    color: white;
+    top: 0;
+    font-size: 24px;
+    font-family: 'Rozha One', serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    pointer-events: none;
+    margin-top: 30px;
+}
+
+/* Most popular hover information */
+.description{
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    
+}
+
+.details{
+    line-height: 40px;
+}
+
+button{
+    font-size: 18px;
+    font-family: 'Rozha One', serif;
+    color: white;
+    border-radius: 10px;
+    border: #957F0D 3px solid;
+    width: 133px;
+    height: 46px;
+    background-color: Transparent;
+    margin-top: 10px;
+}
+
+.countries img:hover {
+    filter: brightness(50%);
+}
+
+
+/* RWD phone most popular 1200 */
+@media screen and (min-width: 1200px) {
+    .countryPanel {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* RWD phone most popular 768 */
+@media screen and (max-width: 650px) {
+    .countryPanel{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .canada{
+        display: none;
+    }
+
+    .phoneCanada{
+        display: block;
+    }
+
+    .countryName1{
+        color: white;
+        font-size: 36px;
+        font-family: 'Rozha One', serif;
+        position: absolute;
+        bottom: 25px;
+        left: 20px;
+    }
+
+    .countries {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+ /* Catagories */
+.continentPanel {
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.continents{
+    margin: 10px 0;
+    margin-right: 16px;
+	height: 100%;
+	position: relative;
+    cursor: pointer;
+}
+
+.nameContinent{
+    color: white;
+    font-family: 'Rozha One', serif;
+    font-size: 64px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.more{
+    border: solid 5px #957F0D;
+    width: 356px;
+    height: 197px;
+    border-radius: 10px;
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 155px;
+}
+
+/* RWD phone Catagories 1200 */
+@media screen and (min-width: 1200px) {
+    .continentPanel {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* RWD phone Catagories 768 */
+@media screen and (max-width: 650px) {
+    .continentPanel{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .continents{
+        margin: 10px 0;
+    }
+}
+
+/* Contact */
+.companyContact{
+    color: #484747;
+    font-size: 18px;
+    font-family: 'Rozha One', serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.companyPhone{
+    margin-right: 109px;
+}
+
+.companyEmail{
+    margin-left: 109px;
+}
+
+/* Form */
+form{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    border: #957F0D 10px solid ;
+    width: 1134px;
+    height: 490px;
+    margin-top: 30px;
+    
+}
+
+/* We can solve your problems! */
+.formTitle{
+    color: #484747;
+    font-size: 24px;
+    font-family: 'Rozha One', serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* From Content */
+label{
+    font-size: 18px;
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    
+}
+
+input[type=text]{
+    border: #957F0D 3px solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    font-size: 18px;
+}
+
+input[type=email]{
+    border: #957F0D 3px solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    font-size: 18px;
+}
+
+.nameGroup{
+    margin-top: 120px;
+}
+
+.emailGroup{
+    margin-top: 20px;
+}
+
+textarea{
+    border: #957F0D 3px solid;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+.contentInformation{
+    display:flex;                                                                                   
+    justify-content: center;
+}
+
+.messages{
+    margin-left: 80px;
+    margin-top: 40px;
+    text-align: center;
+    width: 30vw;
+}
+
+.messages p{
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    font-size: 14px;
+}
+
+/* bt Submit */
+input[type=submit]{
+    border: #957F0D solid 3px ;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    background-color: white;
+    font-size: 18px;
+}
+
+/* bt submit hover */
+input[type=submit]:hover{
+    color: white;
+    background-color: #484747;
+    border: #c2a513 solid 3px 
+}
+
+.btSubmit{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Back to top */
+.btBackToTop{
+    color: #484747;
+    font-family: 'Rozha One', serif;
+    font-size: 24px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* back to top hover */
+.btBackToTop:hover{
+    color: #957F0D;
+}
+
+
+
+/* RWD phone Contact  */
+@media screen and (max-width: 650px) {
+    .companyContact{
+        display: block;
+        text-align: center;
+    }
+
+    .companyPhone{
+        margin-right: 0;
+        margin-bottom: 10px;
+
+    }
+    .companyEmail{
+        margin-left: 0;
+    }
+
+    .contentInformation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nameGroup label{
+        display: block;
+        text-align: center;
+    }
+
+    .emailGroup label{
+        display: block;
+        text-align: center;
+    }
+
+    input[type=text],input[type=email] {
+       margin-left: 0;
+        }
+
+    .nameGroup{
+        margin-top: 30px;
+    }
+
+    .messages{
+        margin-top: 20px;
+        margin-left: 0;
+        width: 250px;
+        
+    }
+
+    fieldset{
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .btSubmit{
+        margin-top: 20px;
+    }
+
+}

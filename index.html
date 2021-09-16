@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <!-- logo image -->
+        <img class="logo" src="/Images/Logo.png" alt="logo image">
+        <nav>
+            <img class="hamburger" src="/Images/menu.png" alt="menu icon">
+            <ul>
+                <li>Home</li>
+                <li>Popular</li>
+                <li>Catagories</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Image and Title -->
+        <section class="heroImage" id="heroImage">
+            <h1>Create memories with someone you love</h1>
+        </section>
+
+        <!-- Most Popular -->
+        
+        <!-- Title -->
+        <h2 id="Popular">Most Popular</h2>
+
+        <!-- Canada -->
+        <section class="countryPanel">
+            <section class="countries">
+                <img class="canada" src="/Images/Canada.png" alt="most popular Canada">
+                <img class="phoneCanada" src="/Images/Canada-phone.png" alt="phone canada image">
+                <p class="countryName1">Canada</p>
+                <!-- Canada Hover -->
+                <div class="information">
+                    <h3>Canada Niagara Falls </h3>
+                    <p class="description">The most beautiful waterfall is in Canada!</p>
+                    <p class="details">3 Days Tour</p>
+                    <p class="details">$ 500 CAD/ per person</p>
+                    <p class="details">Next Departure 7/31/2021</p>
+                    <button>More Details</button>
+                </div>
+            </section>
+
+            <!-- Taiwan -->
+            <section class="countries">
+                <img src="/Images/Taiwan.png" alt="most popular Taiwan">
+                <p class="countryName2">Taiwan</p>
+                <!-- Taiwan Hover -->
+                <div class="information">
+                    <h3>Taiwan Xiao Liuqiu </h3>
+                    <p class="description">Swim with sea turtle!</p>
+                    <p class="details">5 Days Tour</p>
+                    <p class="details">$ 2000 CAD/ per person</p>
+                    <p class="details">Next Departure 9/24/2021</p>
+                    <button>More Details</button>
+                </div> 
+            </section>
+
+            <!-- Thailand -->
+            <section class="countries">
+                <img src="/Images/Thailand.png" alt="most popular Thailand">
+                <p class="countryName2">Thailand</p>
+                <!-- Thailand Hover -->
+                <div class="information">
+                    <h3>Thailand Bankok</h3>
+                    <p class="description">You can’t miss Art of Temples!</p>
+                    <p class="details">7 Days Tour</p>
+                    <p class="details">$ 2500 CAD/ per person</p>
+                    <p class="details">Next Departure 8/31/2021</p>
+                    <button>More Details</button>
+                </div>
+            </section>
+            <!-- America -->
+            <section class="countries">
+                <img src="/Images/America.png" alt="most popular America">
+                <p class="countryName2">America</p>
+                <!-- America Hover -->
+                <div class="information">
+                <h3>America Antelope Canyon</h3>
+                    <p class="description">Can't wait for seeing the masterpiece by nature! </p>
+                    <p class="details">5 Days Tour</p>
+                    <p class="details">$ 1000 CAD/ per person</p>
+                    <p class="details">Next Departure 8/15/2021</p>
+                    <button>More Details</button>
+                </div>
+            </section> 
+
+            <!-- Japan -->
+            <section class="countries">
+                <img src="/Images/Japan.png" alt="most popular Japan">
+                <p class="countryName2">Japan</p>
+                <!-- Japan Hover -->
+                <div class="information">
+                    <h3>Japan Tokyo</h3>
+                    <p class="description">Romantic cherry blossom in Tokyo! </p>
+                    <p class="details">8 Days Tour</p>
+                    <p class="details">$ 3000 CAD/ per person</p>
+                    <p class="details">Next Departure 9/1/2021</p>
+                    <button>More Details</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- Catagories -->
+        <h2 id="Catagories">Catagories</h2>
+
+        <section class="continentPanel">
+                <!-- Asia -->
+            <Section class="continents">
+                <img src="/Images/Asia.png" alt="catagories Asia">
+                <p class="nameContinent">Asia</p>
+            </Section>
+
+                <!-- Europe -->
+            <Section class="continents">
+                <img src="/Images/Europe.png" alt="catagories Europe">
+                <p class="nameContinent">Europe</p>
+            </section>
+
+                <!-- North America -->
+            <Section class="continents"> 
+                <img src="/Images/North America.png" alt="catagories North America">
+                <p class="nameContinent">North America</p>
+            </section>
+
+                <!-- Oceania -->
+            <Section class="continents">
+                <img src="/Images/Oceania.png" alt="catagories Oceania">
+                <p class="nameContinent">Oceania</p>
+            </Section>
+
+                <!-- Africa -->
+            <Section class="continents">
+                <img src="/Images/Africa.png" alt="catagories Africa">
+                <p class="nameContinent">Africa</p>
+            </section>
+
+                <!-- More -->
+            <section class="continents">
+                <p class="more">More</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Contact -->
+        <Section>
+            <!-- Title -->
+            <h2 id="Contact">Contact</h2>
+            <!-- phone and email -->
+            <section class="companyContact">
+                <p class="companyPhone">Phone: +1 202 215 2076</p>
+                <p class="companyEmail">Emal: Creating Travel@gmail.com</p>
+            </section>  
+
+            <!-- form -->
+            <form action="/my-handling-form-page" method="post">
+                <fieldset>
+                    <p class="formTitle">We can solve your problems!</p>
+
+                    <div class="contentInformation">
+                        <section>
+                            <!-- Name -->
+                            <section class="nameGroup">
+                                <label for="name">Name</label>
+                                <input type="text" name="name"
+                                placeholder="First Name">
+                            </section>
+
+                            <!-- Email -->
+                            <section class="emailGroup">
+                                <label for="email">Email</label>
+                                <input type="email" name="emailaddress" id="emailaddress" placeholder="creatingTravel@email.com">
+                            </section>
+                        </section>
+
+                        <!-- Messages -->
+                        <section class="messages">
+                            <label for="messages">Messages</label>
+                            <textarea id="messagesbox" name="messages" rows="8" cols="30"></textarea>
+                            <p>Remain characters: <span></span></p>
+                        </section>
+                    </div>
+
+                    <!-- bt submit -->
+                    <section class="btSubmit">
+                        <label for="formSubmit"></label>
+                        <input type="submit" name value="Submit">
+                    </section>
+
+                </fieldset>
+            </form>
+        </Section>
+        
+        <!-- Back to top -->
+        <Section class="btBackToTop">
+            <img src="/Images/Polygon .png" alt="back to top icon">
+            <p>Back To Top</p>
+        </Section>
+    </footer>
+    <!-- js -->
+    <script src="all.js"></script>
+</body>
+</html>
