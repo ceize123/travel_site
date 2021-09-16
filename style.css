@@ -89,7 +89,7 @@ nav li{
 
 /* Hero Image and Title */
 .heroImage{
-    background-image:url(/Images/Hero\ Image.svg) ;
+    background-image:url('./Images/Hero\ Image.svg') ;
     padding-top: 220px;
     height: 415px;
     background-size: cover;
